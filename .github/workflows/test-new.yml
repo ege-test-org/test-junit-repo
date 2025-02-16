@@ -1,0 +1,60 @@
+name: Test New
+
+on:
+  pull_request:
+    paths-ignore:
+      - "README.md"
+      - "CODE_OF_CONDUCT.md"
+      - "CONTRIBUTING.md"
+      - "LICENSE"
+      - "SECURITY.md"
+      - "docs/**"
+      - ".github/**"
+      - "!.github/workflows/test.yml"
+  push:
+    branches:
+      - develop
+      - main
+      - test-new
+      - release/*
+    paths-ignore:
+      - "README.md"
+      - "CODE_OF_CONDUCT.md"
+      - "CONTRIBUTING.md"
+      - "LICENSE"
+      - "SECURITY.md"
+      - "docs/**"
+      - ".github/**"
+      - "!.github/workflows/test.yml"
+  release:
+    types:
+      - created
+
+env:
+  CI: true
+  node: 22
+  java: 21
+
+jobs:
+  server-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          # Install Java 17 to run programming templates
+          java-version: ${{ env.java }}
+          cache: "gradle"
+      - name: Java Tests
+        run: |
+          set -o pipefail
+          echo "Executing all tests"
+          ./gradlew --console=plain test | tee tests.log
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: JUnit Test Results
+          path: build/test-results/test/*.xml
