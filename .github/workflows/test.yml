@@ -14,10 +14,6 @@ on:
     - '!.github/workflows/test-artemis.yml'
     - '!.github/workflows/test-e2e.yml'
   push:
-    branches:
-    - develop
-    - main
-    - release/*
     paths-ignore:
     - 'README.md'
     - 'CODE_OF_CONDUCT.md'
