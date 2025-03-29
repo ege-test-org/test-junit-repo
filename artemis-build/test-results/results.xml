@@ -9,7 +9,6 @@
   <testcase name="Course management › Course creation › Creates a new course with custom groups" classname="e2e/course/CourseManagement.spec.ts" time="12.703">
     
     <system-out>
-      
       <![CDATA[Retrying delete course request due to failure
 Retrying delete course request due to failure
 Retrying delete course request due to failure
