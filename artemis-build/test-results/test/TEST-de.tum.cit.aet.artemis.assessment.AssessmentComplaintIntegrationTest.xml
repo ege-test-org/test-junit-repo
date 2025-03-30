@@ -3,7 +3,8 @@
   <properties/>
   <testcase name="getComplaintsByExerciseId_tutor_sensitiveDataHidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="6.42">
 	  <failure message="CourseManagement.spec.ts:56:13 Manually adds and removes a student" type="FAILURE">
-      
+
+		  
       <![CDATA[[fast-tests] › e2e/course/CourseManagement.spec.ts:56:13 › Course management › Manual student selection › Manually adds and removes a student @fast 
 
     Test timeout of 45000ms exceeded.
