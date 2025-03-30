@@ -9,6 +9,7 @@
 
     Test timeout of 45000ms exceeded.
 
+    
     Error: page.waitForResponse: Test timeout of 45000ms exceeded.
     =========================== logs ===========================
     waiting for response "api/core/courses/*/students/artemis_test_user_1"
