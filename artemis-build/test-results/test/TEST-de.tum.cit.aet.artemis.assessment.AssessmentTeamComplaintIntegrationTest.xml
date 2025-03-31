@@ -7,6 +7,7 @@
 		  
       <![CDATA[[fast-tests] › e2e/course/CourseManagement.spec.ts:56:13 › Course management › Manual student selection › Manually adds and removes a student @fast 
 
+	  
     Test timeout of 45000ms exceeded.
 
     Error: page.waitForResponse: Test timeout of 45000ms exceeded.
