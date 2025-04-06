@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" tests="10" skipped="0" failures="1" errors="0" timestamp="2025-02-14T23:42:30" hostname="fv-az1721-502" time="1.964">
   <properties/>
-  <testcase name="getComplaintByResultId_studentAndNotPartOfTeam_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.27">
+  <testcase name="getComplaintByResultId_studentAndNotPartOfTeam_forbidden_getComplaintByResultId_studentAndNotPartOfTeam_forbidden_getComplaintByResultId_studentAndNotPartOfTeam_forbidden_getComplaintByResultId_studentAndNotPartOfTeam_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.27">
   <failure message="CourseManagement.spec.ts:56:13 Manually adds and removes a student" type="FAILURE">
 
       <![CDATA[[fast-tests] › e2e/course/CourseManagement.spec.ts:56:13 › Course management › Manual student selection › Manually adds and removes a student @fast 
